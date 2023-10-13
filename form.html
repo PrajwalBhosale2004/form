@@ -1,0 +1,1393 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pune Startup Fest'23</title>
+  <link rel="shortcut icon" href="./images/navbarAndFooter/PSF + Marsh White1.png">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+  <style>
+    *, *:before, *:after {
+  box-sizing: border-box;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+body, button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.backgroundForm {
+  display: flex;
+  min-height: 100vh;
+}
+
+.formContainer {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 20px;
+  /* background-color: #72c0d5; */
+  width: 100%;
+  /* background-image: url("images.jpg"); */
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.screen {
+  position: relative;
+  /* background: #9cd0dc; */
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+
+.form-body {
+  display: flex;
+}
+
+.form-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.form-body-item .formLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #dfddeb;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  /* background: #2285a0; */
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 15px;
+  color: #888;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: rgb(238, 237, 252);
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: rgb(87, 97, 93);
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #f3eef9;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #9af2a4;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffa4bd;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.credits-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+.psfimg{
+  width: 220px;
+  }
+
+@media screen and (max-width: 520px) {
+  .form-body {
+    flex-direction: column;
+  }
+
+  .form-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .app-title div {
+    margin-right: 12px;
+  }
+  .psfimg  {
+    width: 200px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .form-body {
+    padding: 30px;
+  }
+
+  .form-body-item {
+    padding: 0;
+  }
+}
+    @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* height: 100%; */
+  }
+  
+  body {
+    align-items: center;
+    /* font-family: 'Merriweather', serif; */
+    justify-content: center;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+.nav-bg{
+    position: relative;
+    height: 15vh;
+    /* background-color: #000000;  */
+
+}
+p {
+    margin: 0;
+}
+
+#burger-toggle {
+    position: absolute;
+    appearance: none;
+    opacity: 0;
+}
+
+#burger-toggle:checked~.menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+#burger-toggle:checked~.menu .menu-nav-link span div,
+#burger-toggle:checked~.menu img,
+#burger-toggle:checked~.menu .title p {
+    transform: translateY(0);
+    transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
+}
+
+#burger-toggle:checked~.menu .image-link:nth-child(1) img {
+    transition-delay: 0.18s;
+}
+
+#burger-toggle:checked~.menu .image-link:nth-child(2) img {
+    transition-delay: 0.26s;
+}
+
+#burger-toggle:checked~.menu .image-link:nth-child(3) img {
+    transition-delay: 0.34s;
+}
+
+#burger-toggle:checked~.menu .image-link:nth-child(4) img {
+    transition-delay: 0.42s;
+}
+
+#burger-toggle:checked~.burger-menu .line::after {
+    transform: translateX(0);
+}
+
+#burger-toggle:checked~.burger-menu .line:nth-child(1) {
+    transform: translateY(calc(var(--burger-menu-radius) / 5)) rotate(45deg);
+}
+
+#burger-toggle:checked~.burger-menu .line:nth-child(2) {
+    transform: scaleX(0);
+}
+
+#burger-toggle:checked~.burger-menu .line:nth-child(3) {
+    transform: translateY(calc(var(--burger-menu-radius) / -5)) rotate(-45deg);
+}
+
+.burger-menu {
+    --burger-menu-radius: 4em;
+    position: fixed;
+    top: 3vh;
+    left: 5vw;
+    /* right: 5vw; */
+    z-index: 1000;
+    display: block;
+    width: var(--burger-menu-radius);
+    height: var(--burger-menu-radius);
+    outline: none;
+    cursor: pointer;
+}
+
+.burger-menu .line {
+    position: absolute;
+    left: 25%;
+    width: 70%;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.burger-menu .line:nth-child(1) {
+    top: 30%;
+}
+
+.burger-menu .line:nth-child(2) {
+    top: 50%;
+}
+
+.burger-menu .line:nth-child(3) {
+    top: 70%;
+}
+
+.burger-menu .line::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: blueviolet;
+    transform: translateX(-100%);
+    transition: 0.25s;
+}
+
+.burger-menu .line:nth-child(2)::after {
+    transition-delay: 0.1s;
+}
+
+.burger-menu .line:nth-child(3)::after {
+    transition-delay: 0.2s;
+}
+
+.burger-menu:hover .line::after {
+    transform: translateX(0);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background: rgb(26, 30, 35, 1);
+    opacity: 0;
+    overflow-x: hidden;
+    visibility: hidden;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 105;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 750px) {
+    .menu {
+        display: block;
+    }
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    top: 200px;
+    padding-top: 70px;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+    .menu-nav:nth-child(1) {
+        margin-top: -80px;
+        flex-direction: column;
+    }
+
+    .menu-nav:nth-child(2) {
+        padding-top: 0px;
+        flex-direction: column;
+    }
+}
+
+.menu-nav-item {
+    padding: 0.3rem;
+    flex: 1;
+}
+
+.menu-nav-link {
+    position: relative;
+    display: inline-flex;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-nav-link:hover {
+    color: rgb(203, 203, 250);
+    text-decoration: none;
+}
+
+.menu-nav-link span {
+    overflow: hidden;
+}
+
+.menu-nav-link span div {
+    transform: translateY(102%);
+}
+
+.menu-nav-link::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgb(203, 203, 250);
+    ;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+.menu-nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    
+}
+
+.menu .gallery {
+    /* padding-top: 100px; */
+    text-align: center;
+    padding-bottom: 100px;
+    position: relative;
+    top: 100px;
+}
+
+@media screen and (min-width: 750px) {
+    .menu .gallery {
+        top: 250px
+    }
+}
+
+/* @media screen and (min-width: 750px) and (max-width: 825px) {
+    
+} */
+
+.menu .title {
+    font-size: 70px;
+    color: white;
+    overflow: hidden;
+
+}
+
+.menu .title p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transform: translateY(102%);
+}
+
+.menu .images {
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 750px) {
+    .menu-nav {
+        top: 70px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .menu .images {
+        justify-content: center;
+    }
+}
+
+.menu .images .image-link {
+    width: 15vw;
+    margin: 0 12px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 750px) {
+    .menu .images .image-link {
+        width: 40vw;
+        margin: 0 12px 12px 0;
+    }
+}
+
+.menu .images .image-link .image {
+    position: relative;
+    transition: 0.6s;
+}
+
+.menu .images .image-link .image::before {
+    position: absolute;
+    content: attr(data-label);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.menu .images .image-link:hover .image {
+    transform: scale(1.2);
+}
+
+.menu .images .image-link:hover .image::before {
+    opacity: 1;
+}
+
+.menu .images img {
+    height: 250px;
+    transform: translateY(102%);
+}
+    body{
+  /* background-color: #0c0624; */
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.logo {
+  position: absolute;
+    right: 15px;
+    padding: 15px;
+}
+.logo img {
+  width: 15vh;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  /* background: #151414; */
+  background-color: #0c081c;
+
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  margin-top: 50px;
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.footer-social-icon{
+  margin-top: 50px;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget img{
+  height: 240px;
+}
+.footer-widget ul li {
+  display: inline-block;
+  /* float: left; */
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background-color: #0c081c;
+  /* background: #202020; */
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.design{
+  /* width: 100vw; */
+  /* z-index: 1; */
+  width: 100%;
+
+  /* margin-top: 5px; */
+  /* padding: 25px 0; */
+}
+.design p{
+  /* background: aqua; */
+  margin: 0;
+  text-align: center;
+  color: black;
+  font-size: 17px;
+  font-weight: 700;
+  /* color: #878787; */
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+
+.cardFooter {
+  margin: 12px;
+  width: 205px;
+  display: grid;
+  grid-template-rows: 20px 50px -14fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  cursor: pointer;
+  color: whitesmoke;
+  background-color:#151414 ;
+  padding: 1em;
+}
+
+.cardFooter:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+
+.cardFooter__link,
+.cardFooter__exit,
+.cardFooter__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cardFooter__link::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  /* background-color: rgba(255, 255, 255, 0.6); */
+  transition: all 0.5s;
+}
+
+.cardFooter__link:hover::after {
+  width: 100%;
+}
+
+.cardFooter__exit {
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+.cardFooter__icon {
+  grid-row: 2/3;
+  /* font-size: 30px; */
+}
+
+.cardFooter__title {
+  grid-row: 3/4;
+  /* font-weight: 400; */
+  color: #ffffff;
+}
+
+.cardFooter__apply {
+  grid-row: 4/5;
+  align-self: center;
+}
+.card-1 {
+  /* background: radial-gradient(#1fe4f5, #3fbafe); */
+  background-image: transparent;
+  border: 2px solid wheat;
+  /* width: 210px; */
+}
+
+.card-2 {
+  /* background: radial-gradient(#fbc1cc, #fa99b2); */
+  background-image: transparent;
+  border: 2px solid wheat;
+  /* width: 210px; */
+
+}
+
+.card-3 {
+  /* background: radial-gradient(#76b2fe, #b69efe); */
+  background-image: transparent;
+  border: 2px solid wheat;
+  width: 210px;
+
+}
+
+.card-4 {
+  /* background: radial-gradient(#60efbc, #58d5c9); */
+  background-image: transparent;
+  border: 2px solid wheat;
+}
+
+.card-5 {
+  /* background: radial-gradient(#f588d8, #c0a3e5); */
+  background-image: transparent;
+  border: 2px solid wheat;
+}
+@media (max-width:990px) {
+  .footer-section .container .footer-content .row{
+    flex-direction: column-reverse;
+  }
+  
+}
+.footer-section .container .footer-content .row .col-xl-4 .footer-widget .img{
+  display: flex;
+  justify-content: center;
+}
+.footer-section .container .footer-content .row .col-xl-4 .footer-widget .footer-social-icon span{
+  text-align: center;
+}
+
+
+
+@media screen and (max-width:510px) {
+  .main-container{
+      width: 100vw;
+  }
+  .footerCards{
+      width: 100vw;
+  }
+}
+
+
+.wrapper {
+  /* background:black; */
+  background-image: transparent;
+  padding: 40px;
+  text-align: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.56s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+
+.wrapper .icon span{
+  background-color: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) ease-in;
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background-color: #305ead;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
+
+.wrapper .icon span{
+  /* background-color: white; */
+}
+
+.follow .follow-us{
+  font-weight:400 ;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0%;
+  color: white;
+}
+
+.single-cta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-cta .fas{
+  cursor: pointer;
+}
+.single-cta .far{
+  cursor: pointer;
+}
+
+.footer-widget .cards .cardFooter span{
+  text-align: center;
+}
+
+.cta-text h4{
+  cursor: pointer;
+}
+
+@media screen and (min-width: 990px){
+  .col-xl-8{
+    position: relative;
+    top:100px;
+  }  
+}
+
+::-webkit-scrollbar{
+  width: 0.8em;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#add8e6, #00008b);
+  border: 0.1em solid black;
+  border-radius: 100vw;
+
+}
+
+/* ::-webkit-scrollbar-thumb:hover{
+  background: hsl(194, 93%, 27%);
+  border-radius: 100vw;
+} */
+
+::-webkit-scrollbar-track{
+background: hsl(212, 71%, 23%,);
+border-radius: 100vw;
+width: 0.9em;
+}
+
+@media screen and (max-width: 480px) {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.new-margin-class {
+  margin-bottom: 80px !important;
+}
+
+
+.new-margin-class {
+  margin-bottom: 80px !important;
+}  </style>
+  <!-- <link rel="stylesheet" href="navBar.css"> -->
+
+
+  <!-- <link rel="stylesheet" href="./styles/contact.css"> -->
+</head>
+
+<body style="background-color: #0c0624;">
+  <div id="my-background" style="height: 100%; width: 100%; z-index: -100; position: fixed; filter: opacity(0.35);">
+  </div>
+  <div class="nav-bg">
+    <div class="logo" style="top: 1%;right: 1%;"><a href="./main"><img
+          src="./images/navbarAndFooter/PSF + Marsh White1.png" alt=""></a>
+    </div>
+  </div>
+  <input type="checkbox" id="burger-toggle">
+  <label for="burger-toggle" class="burger-menu">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </label>
+  <div class="menu">
+    <div class="menu-inner">
+      <ul class="menu-nav">
+        <li class="menu-nav-item"><a class="menu-nav-link" href="./main"><span>
+              <div><i class="fa-solid fa-house" style="padding-right: 1rem;"></i>Home</div>
+            </span></a></li>
+        <li class="menu-nav-item"><a class="menu-nav-link" href="./aboutus"><span>
+              <div><i class="fa-regular fa-file-lines" style="padding-right: 1rem;"></i>About Us</div>
+            </span></a></li>
+        <!-- <li class="menu-nav-item"><a class="menu-nav-link" href="../partners"><span>
+                            <div><i class="fa-solid fa-handshake" style="padding-right: 1rem;"></i>Present Partners
+                            </div>
+                        </span></a></li> -->
+        <li class="menu-nav-item"><a class="menu-nav-link" href="./partners"><span>
+              <div> <i class="fa-regular fa-handshake" style="padding-right: 1rem; display: inline-block;"></i>Previous
+                Partners</div>
+            </span></a></li>
+        <li class="menu-nav-item"><a class="menu-nav-link" href="../startup_expo"><span>
+              <div><i class="fa-solid fa-stairs" style="padding-right: 1rem;"></i>Startup Expo</div>
+            </span></a></li>
+        <li class="menu-nav-item"><a class="menu-nav-link" href="./alumni"><span>
+              <div><i class="fa-solid fa-people-group" style="padding-right: 1rem;"></i>Alumni</div>
+            </span></a></li>
+        <li class="menu-nav-item"><a class="menu-nav-link" href="../ongoing_events"><span>
+              <div><i class="fa-regular fa-calendar-days" style="padding-right: 1rem;"></i>Ongoing Sessions
+              </div>
+            </span></a></li>
+        <li class="menu-nav-item"><a class="menu-nav-link" href="./munafa/munafa.html"><span>
+              <div><i class="fa-sharp fa-solid fa-puzzle-piece" style="padding-right: 1rem;"></i>Events</div>
+            </span></a></li>
+        <li class="menu-nav-item"><a class="menu-nav-link" href="./investor"><span>
+              <div><i class="fa-solid fa-hand-holding-dollar" style="padding-right: 1rem;"></i>Investors</div>
+            </span></a></li>
+        <li class="menu-nav-item"><a class="menu-nav-link" href="./visitorreg.php"><span>
+              <div><i class="fa-solid fa-shoe-prints" style="padding-right: 1rem;"></i>Visitor Registration</div>
+            </span></a></li>
+        <li class="menu-nav-item"><a class="menu-nav-link" href="./contact.php"><span>
+              <div><i class="fa-solid fa-envelope-open-text" style="padding-right: 1rem;"></i>Contact Us</div>
+            </span></a></li>
+        <li class="menu-nav-item"><a class="menu-nav-link" href="./team"><span>
+              <div><i class="fa-solid fa-user-group" style="padding-right: 1rem;"></i>Team</div>
+            </span></a></li>
+        <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+              <div>
+                <center><i class="fa-solid fa-chevron-down"></i></center>
+              </div>
+            </span></a></li>
+      </ul>
+      <div class="gallery">
+        <div class="title">
+          <p>PSF'22 Gallery</p>
+        </div>
+        <div class="images">
+          <a class="image-link" href="#">
+            <div class="image" data-label="PSF'22 Gallery"><img src="./images/navbarAndFooter/PSF'22_Gallery0.jpg"
+                alt=""></div>
+          </a>
+          <a class="image-link" href="#">
+            <div class="image" data-label="PSF'22 Gallery"><img src="./images/navbarAndFooter/PSF'22_Gallery1.jpg"
+                alt=""></div>
+          </a>
+          <a class="image-link" href="#">
+            <div class="image" data-label="PSF'22 Gallery"><img src="./images/navbarAndFooter/PSF'22_Gallery2.jpg"
+                alt=""></div>
+          </a>
+          <a class="image-link" href="#">
+            <div class="image" data-label="PSF'22 Gallery"><img src="./images/navbarAndFooter/PSF'22_Gallery3.jpg"
+                alt=""></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3 class="text-center text-success">
+      </h3>
+  <form action="" method="post" name='google-sheet'>
+    <script src="https://kit.fontawesome.com/6fc46b33e7.js" crossorigin="anonymous"></script>
+    <div class="backgroundForm">
+      <div class="formContainer">
+        <div class="screen">
+          <div class="form-body">
+            <div class="form-body-item formLeft">
+              <div class="app-title">
+                <span>VISITOR</span>
+                <span>REGISTRATION</span>
+                <!-- <img src="PSFb.png" class="psfimg"> -->
+              </div>
+              <!-- <img src="psflogo.jpeg" class="psfimg"> -->
+
+              <div class="app-contact">CONTACT INFO : <a href="mailto:queries.psf@gmail.com">queries.psf@gmail.com</a>
+              </div>
+            </div>
+            <div class="form-body-item">
+              <div class="app-form">
+                <p style="font-size:small;">
+                  Welcome to the Pune StartUp Fest'23 Visitor's Registration Form!<br> Discover innovative startups in
+                  Pune at COEP Tech on March 11th and 12th.<br> No entry fee required.
+                </p>
+                <div class="app-form-group">
+                  <input name="name" class="app-form-control" placeholder="NAME" value="" required autofocus>
+                </div>
+                <div class="app-form-group">
+                  <input name="email" class="app-form-control" placeholder="EMAIL" type="email" required="">
+                </div>
+                <div class="app-form-group">
+                  <input name="college" class="app-form-control" placeholder="Organization/College Name">
+                </div>
+                <div class="app-form-group">
+                  <input type="number" name="mobile" class="app-form-control" placeholder="Mobile Number" required="">
+                </div>
+                <div class="app-form-group buttons">
+                  <button class="app-form-button">CANCEL</button>
+                  <button name="submit" class="app-form-button">SUBMIT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta p-2">
+
+              <a href="https://goo.gl/maps/8NBMTPuq9N3V4dw1A" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+              <div class="cta-text">
+                <h4><a href="https://goo.gl/maps/8NBMTPuq9N3V4dw1A" target="_blank">Find us</a></h4>
+                <!-- <span>COEP Tech
+                                    University,Pune </span> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta p-2">
+              <a href="https://wa.me/qr/PDT3YMXZ5NXIB1" target="_blank"><i class="fas fa-phone"></i></a>
+              <div class="cta-text">
+                <h4><a href="https://wa.me/qr/PDT3YMXZ5NXIB1" target="_blank">Call us</a></h4>
+                <!-- <span>9673599363</span> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta p-2">
+              <a href="mailto:queries.psf@gmail.com" target="_blank"><i class="far fa-envelope-open"></i></a>
+              <div class="cta-text">
+                <h4><a href="mailto:queries.psf@gmail.com" target="_blank">Mail us</a></h4>
+                <!-- <span>queries.psf@gmail.com</span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <!-- <div class="footer-logo">
+                                    <a href="index"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                                </div> -->
+              <!-- <div class="footer-text">
+                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
+                                </div> -->
+              <div class="img">
+
+                <a href="./main"><img src="images/navbarAndFooter/MM + PSF + BF.png" alt="">
+</a>
+              </div>
+              <div class="follow" style="overflow-x: visible;">
+                <p class="follow-us">Follow Us</p>
+                <div class="wrapper" style="overflow-x: visible;">
+                  <a href="https://tinyurl.com/biec-facebook" target="_blank" class="icon facebook">
+                    <!-- <div class="tooltip">Facebook</div> -->
+                    <span><i class="fab fa-facebook-f"></i></span>
+                  </a>
+                  <a href="https://tinyurl.com/biec-twitter" target="_blank" class="icon twitter">
+                    <!-- <div class="tooltip">Twitter</div> -->
+                    <span><i class="fab fa-twitter"></i></span>
+                  </a>
+                  <a href="https://instagram.com/biec_coep?igshid=Yzg5MTU1MDY=" target="_blank" class="icon instagram">
+                    <!-- <div class="tooltip">Instagram</div> -->
+                    <span><i class="fab fa-instagram"></i></span>
+                  </a>
+                  <a href="https://www.linkedin.com/company/pune-startup-fest/" target="_blank" class="icon linkedin">
+                    <!-- <div class="tooltip">Github</div> -->
+                    <span><i class="fab fa-linkedin"></i></span>
+                  </a>
+                  <a href="https://tinyurl.com/biec-youtube" target="_blank" class="icon youtube">
+                    <!-- <div class="tooltip">Youtube</div> -->
+                    <span><i class="fab fa-youtube"></i></span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-12 mb-30 new-margin-class">
+            <div class="footer-widget">
+              <div class="cards">
+                <div class="cardFooter card-1">
+                  <span class="style" style="text-align: center; font-weight: bold;">Dr. Vidya More</span>
+                  <span class="style1" style="text-align: center; padding-top: 3px;font-size: small;">Faculty
+                    Advisor,</span>
+                  <span class="style2"><a href="mailto:vnm.extc@coep.ac.in"
+                      style="font-size: small;">vnm.extc@coep.ac.in</a></span>
+                </div>
+                <div class="cardFooter card-2">
+                  <span class="style" style="text-align: center; font-weight: bold;">Dr. Rahul Adhao</span>
+                  <span class="style1" style="text-align: center; padding-top: 3px;font-size: small;">Faculty
+                    Advisor,</span>
+                  <span class="style2"><a href="mailto:rba.comp@coep.ac.in"
+                      style="font-size: small">rba.comp@coep.ac.in</a></span>
+                </div>
+                <div class="cardFooter card-3">
+                  <span class="style" style="text-align: center; font-weight: bold;">Gaurav Sonewane</span>
+                  <span class="style1" style="text-align: center; padding-top: 3px;font-size: small;">Secretary,</span>
+                  <!-- <span class="style2">BHAU's I & E-cell</span> -->
+                  <span class="style2"><a href="mailto:secretary.psf@coep.ac.in"
+                      style="font-size: small;margin-left: -5px;">secretary.psf@coep.ac.in</a></span>
+                </div>
+                <div class="cardFooter card-4">
+                  <span class="style" style="text-align: center; font-weight: bold;">Samta Raka</span>
+                  <span class="style1" style="text-align: center; padding-top: 3px;font-size: small;">Finance &amp;
+                    Marketing Executive,</span>
+                  <span class="style3"><a href="mailto:finance.psf@coep.ac.in"
+                      style="font-size:small">finance.psf@coep.ac.in</a></span>
+                </div>
+                <div class="cardFooter card-5">
+                  <span class="style" style="text-align: center; font-weight: bold;">Sanmeet Sawla</span>
+                  <span class="style1 m-0" style="text-align: center; padding-top: 3px;font-size: small;">Investor
+                    Relations
+                    Executive,</span>
+                  <span class="style3"><a href="mailto:ir.psf@coep.ac.in"
+                      style="font-size: small;">ir.psf@coep.ac.in</a></span>
+                </div>
+                <div class="cardFooter card-1">
+                  <span class="style" style="text-align: center; font-weight: bold; font-size: 15px">Varun Shetty</span>
+                  <span class="style1" style="text-align: center; padding-top: 3px;font-size: small;">Events &
+                    Networking Executive,</span>
+                  <span class="style3" style="font-size: small;"><a
+                      href="mailto:events.psf@coep.ac.in">events.psf@coep.ac.in</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+            <div class="copyright-text">
+              <p>Copyright &copy; 2023, All Right Reserved</p>
+            </div>
+
+          </div>
+          <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+            <div class="footer-menu">
+              <ul>
+                <li><a href="./main">Home</a></li>
+                <li><a href="./aboutus">About Us</a></li>
+                <li><a href="./investor">Investors</a></li>
+                <li><a href="./contact.php">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="design" style="background:aqua  ">
+      <p>Designed by Vedang Khedekar &amp; Web Team</p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--<script>-->
+  <!--      const scriptURL = 'https://script.google.com/macros/s/AKfycby8k4YHAEQqB4FvJ1J47jgo_byNvW87sRa5CFJ7c2Rb7-CELXsoqetJcKrgAU1zIWGvRQ/exec'-->
+  <!--      const form = document.forms['google-sheet']-->
+
+  <!--      form.addEventListener('submit', e => {-->
+  <!--          e.preventDefault()-->
+  <!--          fetch(scriptURL, { method: 'POST', body: new FormData(form) })-->
+  <!--              .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))-->
+  <!--              .catch(error => console.error('Error!', error.message))-->
+  <!--      })-->
+  <!--  </script>-->
+  <!-- <script>
+    VANTA.WAVES({
+      el: "#my-background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00
+    })
+  </script> -->
+</body>
+
+</html>
